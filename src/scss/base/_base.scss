@@ -19,3 +19,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  background-image: url(../img/pic/top.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: 0;
+  color: #111;
+  text-shadow:
+    1px 1px 1px #f2f2f2,
+    -1px -1px 1px #f2f2f2;
+}
