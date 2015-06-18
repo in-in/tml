@@ -366,23 +366,26 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  height: 100%;
-  background-image: url(../img/pic/top.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: azure;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center; }
 
 h1 {
   margin: 0;
   color: #111;
-  text-shadow: 1px 1px 1px #f2f2f2, -1px -1px 1px #f2f2f2;
   font-family: monospace;
+  font-size: 3em;
   line-height: 200%; }
 
 .icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  fill: #271be0;
-  stroke: #f4f4f4; }
+  width: 3em;
+  height: 3em;
+  fill: deepskyblue;
+  stroke: dimgray; }
