@@ -366,12 +366,23 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
+  height: 100%;
   background-image: url(../img/pic/top.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 
 h1 {
   margin: 0;
   color: #111;
-  text-shadow: 1px 1px 1px #f2f2f2, -1px -1px 1px #f2f2f2; }
+  text-shadow: 1px 1px 1px #f2f2f2, -1px -1px 1px #f2f2f2;
+  font-family: monospace;
+  line-height: 200%; }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: #271be0;
+  stroke: #f4f4f4; }
