@@ -15,7 +15,7 @@ module.exports = function (grunt) {
             'src/scss/base/',
             'src/scss/layout/',
             'src/scss/module/',
-            'src/scss/utilities/'
+            'src/scss/utils/'
           ],
           outputStyle: 'nested'
         },
@@ -142,7 +142,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'src/scss',
           src: ['**/*.scss',
-                '!**/_utilities.scss',
+                '!**/_utils.scss',
                 '!**/_vars.scss',
                 '!**/_module.scss'
                ],
