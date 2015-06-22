@@ -1,0 +1,18 @@
+@import 'flexboxgrid';
+
+.container {
+  width: 957px;
+  margin: 0 auto;
+
+  outline: 1px dashed red;
+}
+
+.row {
+  height: 100%;
+  margin: 0;
+}
+
+[class*='col-xs'] {
+  padding-right: 0;
+  padding-left: 0;
+}

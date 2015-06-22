@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #fff;
+  background-color: #f4f4f4;
 
   font-size-adjust: 100%;
 
@@ -84,35 +84,3 @@ img {
 
 @import 'utils';
 @import 'font';
-
-//TEST RULES
-
-body {
-  display: flex;
-  flex-direction: column;
-
-  height: 100vh;
-
-  background-color: azure;
-
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  margin: 0;
-
-  color: #111;
-
-  font-family: monospace;
-  font-size: 2.5em;
-  line-height: 200%;
-}
-
-.icon {
-  width: 3em;
-  height: 3em;
-
-  fill: deepskyblue;
-  stroke: dimgray;
-}

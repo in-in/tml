@@ -8,8 +8,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           includePaths: [
-            //'node_modules/normalize.css/',
-            //'node_modules/flexboxgrid/dist/',
+            'node_modules/flexboxgrid/dist/',
             //'node_modules/slick-carousel/slick',
             'src/scss/',
             'src/scss/base/',
