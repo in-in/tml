@@ -5,3 +5,10 @@ mixin list(items)
                 - var linkatts = {'href': item.link}
                 a()&attributes(linkatts)= item.title
 
+mixin slide(path,title,text)
+    .slide
+        img(data-flickity-lazyload='img/'+path, alt="#{title}")
+        .slide-wrap
+            .container
+                h1.slide-title=title
+                p.slide-text=text

@@ -9,6 +9,7 @@ module.exports = function (grunt) {
         options: {
           includePaths: [
             'node_modules/flexboxgrid/dist/',
+            'node_modules/flickity/dist/',
             //'node_modules/slick-carousel/slick',
             'src/scss/',
             'src/scss/base/',
@@ -59,6 +60,7 @@ module.exports = function (grunt) {
           //'node_modules/jquery/dist/jquery.js',
           //'node_modules/slick-carousel/slick/slick.js',
           //'node_modules/isotope-layout/dist/isotope.pkgd.js',
+          'node_modules/flickity/dist/flickity.pkgd.js',
           'src/js/dev/*.js'
         ],
         dest: 'src/js/main.js'
