@@ -5276,9 +5276,7 @@ var flkty = new Flickity( elem, {
   arrowShape: { 
   x0: 20,
   x1: 60, y1: 50,
-  x2: 65, y2: 50,
-  x3: 25
-},
-  //percentPosition: false
-  //watchCSS: true
+  x2: 62, y2: 50,
+  x3: 22
+}
 });

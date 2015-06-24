@@ -8,7 +8,8 @@ mixin list(items)
 mixin slide(path,title,text)
     .slide
         img(data-flickity-lazyload='img/'+path, alt="#{title}")
-        .slide-wrap
+        .slide-overlay
             .container
-                h1.slide-title=title
-                p.slide-text=text
+                .slide-wrap
+                    h1.slide-title=title
+                    p.slide-text=text
