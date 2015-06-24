@@ -57,7 +57,8 @@ button {
 
 /* RESET ends */
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  color: #555;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300; }
 
 /*
@@ -728,13 +729,15 @@ body {
 
 header {
   width: 100%;
-  height: 88px; }
+  height: 88px;
+  padding-top: 14px; }
 
 .logo {
   min-width: 152px; }
 
 .question-icon {
   padding-left: 38px;
+  text-transform: uppercase;
   color: #555;
   background-image: url(../img/icon-question.png);
   background-repeat: no-repeat;
@@ -756,9 +759,10 @@ menu {
   .menu ul li a {
     display: block;
     padding-top: 23px;
-    padding-right: 2.3em;
+    padding-right: 1.6em;
     padding-bottom: 23px;
-    padding-left: 2.3em;
+    padding-left: 1.6em;
+    text-transform: uppercase;
     color: #f4f4f4;
     font-size: 14px;
     font-weight: 700; }
@@ -785,7 +789,7 @@ menu {
     background-image: url(../img/icon-search.png);
     background-repeat: no-repeat;
     background-position: 22px center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     font-weight: 300; }
     .search input:focus {
@@ -927,8 +931,7 @@ http://flickity.metafizzy.co
   overflow: hidden;
   max-width: 1350px;
   height: 418px;
-  margin: 0 auto;
-  outline: 1px dashed green; }
+  margin: 0 auto; }
 
 .slide {
   position: relative;
@@ -997,3 +1000,80 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   background: #008dd2; }
+
+.features {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 162px;
+  margin-top: -80px;
+  background-color: #fff;
+  box-shadow: 0 5px 0 #e8e8e8; }
+
+.features-item {
+  padding-top: 1.5625em;
+  padding-right: 1.5625em;
+  padding-left: 1.5625em; }
+
+.features-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  background-image: url(../img/icons-features.png);
+  background-repeat: no-repeat; }
+
+.col-xs-3:nth-child(1) .features-icon {
+  background-position: 0 0; }
+
+.col-xs-3:nth-child(2) .features-icon {
+  background-position: -64px 0; }
+
+.col-xs-3:nth-child(3) .features-icon {
+  background-position: -128px 0; }
+
+.col-xs-3:nth-child(4) .features-icon {
+  background-position: -192px 0; }
+
+.features-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.3; }
+
+.description {
+  width: 100%;
+  margin-top: 2.8125em; }
+
+.description-title {
+  margin-bottom: 1.182em;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700; }
+
+.description-text {
+  font-size: 18px;
+  line-height: 1.3; }
+
+.catalog-item {
+  width: 220px;
+  height: 355px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fff; }
+
+.catalog-title {
+  padding-top: 22px;
+  text-align: center; }
+  .catalog-title span {
+    border-bottom: 1px solid #b4b4b4;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3; }
+
+.catalog-img {
+  margin-top: 24px;
+  text-align: center;
+  outline: 1px dashed black; }
+  .catalog-img img {
+    outline: 1px dashed red; }

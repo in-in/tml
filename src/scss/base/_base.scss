@@ -81,6 +81,8 @@ button {
 @import 'font';
 
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  color: $dark-text-color;
+
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
 }

@@ -1,8 +1,7 @@
 header {
   width: 100%;
   height: 88px;
-
-  //  outline: 1px solid black;
+  padding-top: 14px;
 }
 
 .logo {
@@ -11,6 +10,8 @@ header {
 
 .question-icon {
   padding-left: 38px;
+
+  text-transform: uppercase;
 
   color: $dark-text-color;
   background-image: url(../img/icon-question.png);

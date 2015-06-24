@@ -13,3 +13,14 @@ mixin slide(path,title,text)
                 .slide-wrap
                     h1.slide-title=title
                     p.slide-text=text
+
+
+mixin catalog(title,path)
+    .col-xs-3
+        .catalog-item
+            .catalog-title
+                span=title
+            .catalog-item-front
+                .catalog-img
+                    img(src='img/'+path, alt="#{title}")
+            .catalog-item-back
