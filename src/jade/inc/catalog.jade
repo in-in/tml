@@ -1,5 +1,21 @@
+mixin catalog(title,path)
+    .catalog-item
+        .catalog-title
+            span=title
+        .catalog-item-front
+            .catalog-img
+                img(src='img/'+path, alt="#{title}")
+        .catalog-item-back
+            ul.catalog-item-details
+                li Высококачественная сталь
+                li Гарантия 5 лет
+                li 5 режимов работы
+                li 11 программ
+            a(href="#").catalog-btn
+                | Подробнее
+
 .catalog
-    .row
+    .row.between-xs
         +catalog(
             'Бойлеры ГВС',
             'catalog-pic-1.jpg')

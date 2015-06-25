@@ -10,7 +10,6 @@ module.exports = function (grunt) {
           includePaths: [
             'node_modules/flexboxgrid/dist/',
             'node_modules/flickity/dist/',
-            //'node_modules/slick-carousel/slick',
             'src/scss/',
             'src/scss/base/',
             'src/scss/layout/',
@@ -57,9 +56,6 @@ module.exports = function (grunt) {
           separator: ';\n'
         },
         src: [
-          //'node_modules/jquery/dist/jquery.js',
-          //'node_modules/slick-carousel/slick/slick.js',
-          //'node_modules/isotope-layout/dist/isotope.pkgd.js',
           'node_modules/flickity/dist/flickity.pkgd.js',
           'src/js/dev/*.js'
         ],
@@ -83,8 +79,8 @@ module.exports = function (grunt) {
           injectChanges: true,
           open: true,
           ui: false,
-          //reloadDelay: 200,
-          browser: "chromium-browser",
+          reloadDelay: 200,
+          browser: 'chromium-browser',
           server: {
             baseDir: "src"
           }
