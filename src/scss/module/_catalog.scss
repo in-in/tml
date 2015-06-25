@@ -73,7 +73,7 @@
   background-repeat: no-repeat;
   background-position: left center;
 
-  font-size: em(18);
+  font-size: em(17);
   line-height: 1.33;
 }
 
@@ -92,4 +92,9 @@
 
   font-size: em(14);
   line-height: 3.000em;
+
+  &:hover {
+    color: $main-blue-color;
+    background-color: #fff;
+  }
 }
