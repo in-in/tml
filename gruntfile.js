@@ -88,46 +88,6 @@ module.exports = function (grunt) {
       }
     },
 
-//SVG
-
-    svgmin: {
-      options: {
-        plugins: [
-          {removeViewBox: false},
-          {removeUselessStrokeAndFill: true},
-          {removeMetadata: false}
-        ]
-      },
-      dev: {
-        files: [
-          {
-            expand: true,
-            cwd: 'src/img/svg/',
-            src: ['*.svg'],
-            dest: 'src/img/svgmin/',
-            ext: '.min.svg'
-          }
-        ]
-      }
-    },
-
-    svgstore: {
-      options: {
-        cleanup: ['fill', 'stroke'],
-        inheritviewbox: true,
-        prefix: 'icon-',
-        svg: {
-          xmlns: 'http://www.w3.org/2000/svg',
-          style: "display: none;"
-        }
-      },
-      dev: {
-        files: {
-          'src/img/sprite.svg': ['src/img/svgmin/*.min.svg']
-        }
-      }
-    },
-
 //CSSCOMB
 
     csscomb: {
@@ -176,10 +136,6 @@ module.exports = function (grunt) {
       js: {
         files: 'src/js/dev/index.js',
         tasks: ['concat']
-      },
-      svg: {
-        files: 'src/img/svg/*.svg',
-        tasks: ['newer:svgmin', 'svgstore']
       }
     },
 
@@ -188,9 +144,6 @@ module.exports = function (grunt) {
     clean: {
       build: {
         src: ["build"]
-      },
-      svg: {
-        src: ["src/img/svgmin"]
       }
     },
 
@@ -204,8 +157,7 @@ module.exports = function (grunt) {
               '**',
               '!**/js/dev/**',
               '!**/scss/**',
-              '!**/jade/**',
-              '!**/svg*/**'
+              '!**/jade/**'
             ],
             dest: 'build/'
           }
@@ -266,12 +218,7 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('comb', ['newer:csscomb']);
-  
-  grunt.registerTask('svg', [
-    'clean:svg',
-    'svgmin',
-    'svgstore'
-  ]);
+
   
   grunt.registerTask('build', [
     'comb',
