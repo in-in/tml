@@ -1,15 +1,15 @@
 header {
   width: 100%;
-  height: 88px;
-  padding-top: 14px;
+  height: em(88);
+  padding-top: em(14);
 }
 
 .logo {
-  min-width: 152px;
+  min-width: em(152);
 }
 
 .question-icon {
-  padding-left: 38px;
+  padding-left: 2.714em;
 
   text-transform: uppercase;
 
@@ -18,6 +18,6 @@ header {
   background-repeat: no-repeat;
   background-position: 0 0;
 
-  font-size: 14px;
-  line-height: 24px;
+  font-size: em(14);
+  line-height: 1.72em;
 }

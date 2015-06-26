@@ -3,8 +3,8 @@
 .slider {
   overflow: hidden;
 
-  max-width: 1350px;
-  height: 418px;
+  max-width: em(1350);
+  height: em(418);
   margin: 0 auto;
 }
 
@@ -36,15 +36,15 @@
 }
 
 .slide-title {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: .833em;
+  margin-bottom: .417em;
 
-  font-size: 72px;
+  font-size: em(72);
   font-weight: 700;
 }
 
 .slide-text {
-  font-size: 18px;
+  font-size: em(18);
   line-height: 1.3;
 }
 

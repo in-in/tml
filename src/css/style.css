@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -719,7 +719,7 @@ main {
     order: 1; } }
 
 .container {
-  width: 957px;
+  width: 59.8125em;
   margin: 0 auto; }
 
 .row {
@@ -732,59 +732,139 @@ main {
 
 header {
   width: 100%;
-  height: 88px;
-  padding-top: 14px; }
+  height: 5.5em;
+  padding-top: 0.875em; }
 
 .logo {
-  min-width: 152px; }
+  min-width: 9.5em; }
 
 .question-icon {
-  padding-left: 38px;
+  padding-left: 2.714em;
   text-transform: uppercase;
   color: #555;
   background-image: url(../img/icon-question.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  font-size: 14px;
-  line-height: 24px; }
+  font-size: 0.875em;
+  line-height: 1.72em; }
 
 menu {
   width: 100%;
-  height: 60px;
+  height: 3.75em;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625em;
   padding: 0;
   background-color: #333; }
 
-.menu ul li {
+.dropdown {
+  position: relative; }
+  .dropdown:hover > ul {
+    display: block; }
+
+.menu-main > li {
   margin: 0;
   padding: 0; }
-  .menu ul li a {
+  .menu-main > li > a {
     display: block;
-    padding-top: 23px;
+    padding-top: 1.643em;
     padding-right: 1.6em;
-    padding-bottom: 23px;
+    padding-bottom: 1.643em;
     padding-left: 1.6em;
     text-transform: uppercase;
     color: #f4f4f4;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 700; }
-    .menu ul li a:hover {
+    .menu-main > li > a:hover {
       background-color: #008dd2; }
-  .menu ul li:first-child a {
+  .menu-main > li:first-child a {
     padding-left: 0; }
-  .menu ul li:last-child a {
+  .menu-main > li:last-child a {
     padding-right: 0; }
 
+[class^='menu-submenu-'] {
+  position: absolute;
+  z-index: 2;
+  display: none; }
+  [class^='menu-submenu-'] > li {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-justify-content: center;
+            justify-content: center; }
+    [class^='menu-submenu-'] > li > a {
+      height: 100%;
+      padding-top: 0.9375em;
+      padding-right: 1.5625em;
+      padding-bottom: 0.9375em;
+      padding-left: 1.5625em;
+      font-size: 1em;
+      line-height: 1.2; }
+      [class^='menu-submenu-'] > li > a span {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.menu-submenu-2 {
+  top: 3.75em;
+  width: 15.1875em;
+  background-color: #008dd2; }
+  .menu-submenu-2 > li:hover {
+    background-color: #555; }
+  .menu-submenu-2 > li > a {
+    color: #fff; }
+
+.menu-submenu-2 > li:hover .caret:after {
+  border-left: 5px solid #555; }
+
+.menu-submenu-3 {
+  top: 0;
+  left: 100%;
+  width: 215px;
+  background-color: #555; }
+  .menu-submenu-3 > li > a {
+    padding-right: 1.375em;
+    padding-left: 1.375em;
+    color: #888; }
+    .menu-submenu-3 > li > a:hover {
+      color: #fff; }
+
+.caret-wrapper {
+  position: absolute;
+  top: calc(50% - 6px);
+  left: calc(100% - 6px); }
+
+.caret {
+  position: relative;
+  -moz-transform: scale(0.9999); }
+
+.caret:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid #fff; }
+
+.caret:after {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  content: '';
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #008dd2; }
+
 .search {
-  width: 177px; }
+  width: 11.0625em; }
   .search input {
     width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    padding-right: 22px;
-    padding-bottom: 20px;
-    padding-left: 48px;
+    height: 4.286em;
+    padding-top: 1.429em;
+    padding-right: 1.571em;
+    padding-bottom: 1.429em;
+    padding-left: 3.429em;
     text-transform: uppercase;
     color: #898989;
     border: none;
@@ -792,12 +872,12 @@ menu {
     background-color: #282828;
     background-image: url(../img/icon-search.png);
     background-repeat: no-repeat;
-    background-position: 22px center;
+    background-position: 1.571em center;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 300; }
     .search input:focus {
-      padding-left: 22px;
+      padding-left: 1.571em;
       background-image: none; }
 
 /*! Flickity v1.1.0
@@ -933,8 +1013,8 @@ http://flickity.metafizzy.co
 
 .slider {
   overflow: hidden;
-  max-width: 1350px;
-  height: 418px;
+  max-width: 84.375em;
+  height: 26.125em;
   margin: 0 auto; }
 
 .slide {
@@ -957,13 +1037,13 @@ http://flickity.metafizzy.co
   color: #fff; }
 
 .slide-title {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-size: 72px;
+  margin-top: .833em;
+  margin-bottom: .417em;
+  font-size: 4.5em;
   font-weight: 700; }
 
 .slide-text {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.3; }
 
 .flickity-prev-next-button,
@@ -1009,10 +1089,10 @@ http://flickity.metafizzy.co
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 162px;
-  margin-top: -80px;
+  height: 10.125em;
+  margin-top: -5em;
   background-color: #fff;
-  box-shadow: 0 5px 0 #e8e8e8; }
+  box-shadow: 0 0.313em 0 #e8e8e8; }
 
 .features-item {
   padding-top: 1.5625em;
@@ -1020,10 +1100,10 @@ http://flickity.metafizzy.co
   padding-left: 1.5625em; }
 
 .features-icon {
-  width: 64px;
-  height: 64px;
+  width: 4em;
+  height: 4em;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
   background-image: url(../img/icons-features.png);
   background-repeat: no-repeat; }
 
@@ -1042,7 +1122,7 @@ http://flickity.metafizzy.co
 .features-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.3; }
 
 .description {
@@ -1052,11 +1132,11 @@ http://flickity.metafizzy.co
 .description-title {
   margin-bottom: 1.182em;
   color: #333;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 700; }
 
 .description-text {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.3; }
 
 .description-details {

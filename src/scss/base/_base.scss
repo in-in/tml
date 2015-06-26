@@ -18,7 +18,7 @@ body {
   padding: 0;
 
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1;
 
   -webkit-font-smoothing: antialiased;
@@ -79,7 +79,6 @@ button {
 /* RESET ends */
 
 @import 'utils';
-@import 'font';
 
 body {
   color: $dark-text-color;
