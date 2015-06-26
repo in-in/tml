@@ -99,7 +99,7 @@ menu {
 }
 
 .menu-submenu-2 > li:hover .caret:after {
-  border-left: 0.250em solid #555;
+  border-left: .250em solid #555;
 }
 
 .menu-submenu-3 {
@@ -143,21 +143,21 @@ menu {
 
   content: '';
 
-  border-top: 0.375em solid transparent;
-  border-bottom: 0.375em solid transparent;
-  border-left: 0.375em solid #fff;
+  border-top: .375em solid transparent;
+  border-bottom: .375em solid transparent;
+  border-left: .375em solid #fff;
 }
 
 .caret:after {
   position: absolute;
-  top: 0.125em;
+  top: .125em;
   left: 0;
 
   content: '';
 
-  border-top: 0.250em solid transparent;
-  border-bottom: 0.250em solid transparent;
-  border-left: 0.250em solid $main-blue-color;
+  border-top: .250em solid transparent;
+  border-bottom: .250em solid transparent;
+  border-left: .250em solid $main-blue-color;
 }
 
 .search {
