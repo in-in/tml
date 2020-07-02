@@ -19,7 +19,7 @@ menu {
 .menu-main > li {
   margin: 0;
   padding: 0;
-  > a {
+   > a {
     display: block;
 
     padding-top: 1.643em;
@@ -53,7 +53,7 @@ menu {
 
   display: none;
 
-  > li {
+   > li {
     position: relative;
 
     display: flex;
@@ -63,7 +63,7 @@ menu {
 
     justify-content: center;
 
-    > a {
+     > a {
       height: 100%;
       padding-top: em(15);
       padding-right: em(25);
@@ -87,12 +87,12 @@ menu {
 
   background-color: $main-blue-color;
 
-  > li {
+   > li {
     &:hover {
       background-color: #555;
     }
 
-    > a {
+     > a {
       color: #fff;
     }
   }
@@ -110,8 +110,8 @@ menu {
 
   background-color: #555;
 
-  > li {
-    > a {
+   > li {
+     > a {
       padding-right: em(22);
       padding-left: em(22);
 
